@@ -21,12 +21,19 @@ export default function Home() {
         <Navbar isLoggedIn={true}></Navbar>
         <hr className="my-6"></hr>
         <Top />
-        <Todays></Todays>
+        <div className="my-12"></div>
+        <Todays/>
+        <div className="my-12"></div>
         <Categories />
+        <div className="my-12"></div>
         <BestSell />
+        <div className="my-12"></div>
         <OurProducts />
+        <div className="my-12"></div>
         <Featured />
+        <div className="my-12"></div>
         <ServiceFeature />
+        <div className="my-12"></div>
         <Footer />
       </div>
     </div>

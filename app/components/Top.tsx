@@ -2,7 +2,7 @@ import React from "react";
 
 const Top = () => {
   return (
-    <div className="flex w-full mx-24 ">
+    <div className="flex  mx-24 ">
       
       <div className="min-w-56">
         <p className="text-base mb-4">Woman's Fashion</p>

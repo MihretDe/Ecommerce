@@ -7,7 +7,7 @@ const OurProducts = () => {
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Our Products</p>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between my-9 ">
         <p className="text-4xl font-semibold">Explore Our Products</p>
         <div className="flex gap-3">
           <div className="border border-solid w-12 h-12 rounded-full flex items-center justify-center">
@@ -128,7 +128,7 @@ const OurProducts = () => {
           }}
         />
       </div>
-      <p className="border border-solid bg-red-500 w-60 h-14 rounded-md flex items-center justify-center text-white text-base cursor-pointer hover:bg-red-600 font-medium">
+      <p className="border border-solid bg-red-500 w-60 h-14 rounded-md flex items-center justify-center text-white text-base cursor-pointer hover:bg-red-600 font-medium my-9">
         View all products
       </p>
     </div>

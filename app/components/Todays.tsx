@@ -7,7 +7,7 @@ const Todays = () => {
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Today's</p>
       </div>
-      <div className="flex gap-12 items-end">
+      <div className="flex gap-12 items-end my-9">
         <p className="text-4xl font-semibold">Flash Sales</p>
         <div className="grid grid-cols-7 gap-1 ">
           <div>
@@ -39,7 +39,7 @@ const Todays = () => {
           </div>
         </div>
       </div>
-      <div className="flex overflow-x-scroll gap-6">
+      <div className="flex overflow-x-scroll gap-6 my-4">
         <ItemsCard
           items={{
             discount: -40,

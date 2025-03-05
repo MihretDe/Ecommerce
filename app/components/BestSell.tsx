@@ -7,7 +7,7 @@ const BestSell = () => {
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Today's Sell</p>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between my-9 ">
         <p className="text-4xl font-semibold">Best Selling Products</p>
         <div className="border border-solid w-40 h-14 bg-red-500 flex items-center justify-center text-base font-medium text-white  rounded">
           View All
@@ -60,7 +60,7 @@ const BestSell = () => {
           }}
         />
       </div>
-      <div className=" border border-solid w-full h-[500px] bg-black flex  px-12 items-center justify-between">
+      <div className=" border border-solid w-full h-[500px] bg-black flex  px-12 items-center justify-between my-9">
         <div className=" flex flex-col gap-6">
             <p className="text-base font-semibold text-green-400">Categories</p>
             <p className="text-5xl font-semibold text-white">Enhance Your Music Experience</p>

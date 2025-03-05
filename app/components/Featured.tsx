@@ -7,7 +7,7 @@ const Featured = () => {
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Featured</p>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between my-9 ">
         <p className="text-4xl font-semibold">New Arrival</p>
       </div>
       <div>

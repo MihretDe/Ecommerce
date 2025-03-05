@@ -7,7 +7,7 @@ const Categories = () => {
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Categories</p>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between my-9 ">
         <p className="text-4xl font-semibold">Browse By Category</p>
         <div className="flex gap-3">
           <div className="border border-solid w-12 h-12 rounded-full flex items-center justify-center">
