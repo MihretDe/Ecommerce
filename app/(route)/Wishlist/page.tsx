@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import WishlistComp from "@/app/components/WishlistComp";
 import Footer from "../../components/Footer";
-import ItemsCard from "@/app/components/ItemsCard";
 export default function Home() {
   return (
     <div>

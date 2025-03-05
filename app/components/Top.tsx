@@ -5,13 +5,13 @@ const Top = () => {
     <div className="flex  mx-24 ">
       
       <div className="min-w-56">
-        <p className="text-base mb-4">Woman's Fashion</p>
-        <p className="text-base mb-4">Men's Fashion</p>
+        <p className="text-base mb-4">Woman&apos;s Fashion</p>
+        <p className="text-base mb-4">Men&apos;s Fashion</p>
         <p className="text-base mb-4">Electronics</p>
         <p className="text-base mb-4">Home & Lifestyle</p>
         <p className="text-base mb-4">Medicine</p>
         <p className="text-base mb-4">sports & Outdoor</p>
-        <p className="text-base mb-4">Baby's & Toys</p>
+        <p className="text-base mb-4">Baby&apos;s & Toys</p>
         <p className="text-base mb-4">Groceries & Pets</p>
         <p className="text-base mb-4">Health & Beauty</p>
       </div>

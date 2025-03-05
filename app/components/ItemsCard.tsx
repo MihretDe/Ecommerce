@@ -7,6 +7,7 @@ interface Items {
   ratings: number;
   image: string;
 }
+import Image from "next/image";
 
 const ItemsCard: React.FC<{ items: Items }> = ({ items }) => {
   return (
@@ -20,7 +21,7 @@ const ItemsCard: React.FC<{ items: Items }> = ({ items }) => {
               </p>
             </div>
           ) : (
-            <div></div> 
+            <div></div>
           )}
           <div className="border border-solid w-8 h-8 bg-white rounded-full flex items-center justify-center">
             <svg
@@ -40,10 +41,12 @@ const ItemsCard: React.FC<{ items: Items }> = ({ items }) => {
           </div>
         </div>
         <div className="flex items-start justify-between space-x-4 ">
-          <img
+          <Image
             src={items.image}
             alt={items.title}
-            className="max-w-56 h-44 object-cover"
+            width={224} // Equivalent to max-w-56 (56 * 4 = 224px)
+            height={176} // Equivalent to h-44 (44 * 4 = 176px)
+            className="object-cover"
           />
           <div className="border border-solid w-8 h-8 bg-white rounded-full flex items-center justify-center">
             <svg

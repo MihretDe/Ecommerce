@@ -5,7 +5,7 @@ const Todays = () => {
     <div className="mx-24">
       <div className="flex items-center">
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
-        <p className="font-semibold text-base text-red-600">Today's</p>
+        <p className="font-semibold text-base text-red-600">Today&apos;s</p>
       </div>
       <div className="flex gap-12 items-end my-9">
         <p className="text-4xl font-semibold">Flash Sales</p>

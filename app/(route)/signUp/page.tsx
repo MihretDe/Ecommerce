@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-const page = () => {
+const SignPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -111,4 +111,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SignPage;

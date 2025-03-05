@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Image from "next/image";
 const Navbar = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
   const [showDropdown, setShowDropdown] = React.useState(false);
   return (
@@ -12,22 +12,36 @@ const Navbar = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
             Home
           </a>
           <a className="text-base">Contact</a>
-          <a className="text-base" href="./About">About</a>
-          <a className="text-base " href="./signUp">Sign Up</a>
+          <a className="text-base" href="./About">
+            About
+          </a>
+          <a className="text-base " href="./signUp">
+            Sign Up
+          </a>
         </div>
         <div className="flex gap-5">
-            <div className="flex border border-solid rounded-[4px] bg-gray-200 min-w-[243px] justify-around items-center">
+          <div className="flex border border-solid rounded-[4px] bg-gray-200 min-w-[243px] justify-around items-center">
             <input
               type="text"
               placeholder="What are you looking for?"
               className="text-xs bg-gray-200 outline-none"
             />
-            <img src="assets/search.svg" alt="Search" />
-            </div>
-            <a href="./Wishlist">
-            <img src="assets/heart.svg" alt="Wishlist" />
-            </a>
-            <a href="./Cart"></a>
+            <Image
+              src="/assets/search.svg"
+              alt="Search"
+              width={24} // Adjust based on your needs
+              height={24} // Adjust based on your needs
+            />
+          </div>
+          <a href="./Wishlist">
+            <Image
+              src="/assets/heart.svg"
+              alt="Wishlist"
+              width={24} // Adjust based on your needs
+              height={24} // Adjust based on your needs
+            />
+          </a>
+          <a href="./Cart"></a>
           <div className="flex flex-col">
             {isLoggedIn && (
               <a

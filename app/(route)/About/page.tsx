@@ -1,7 +1,6 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
 import ServiceFeature from "@/app/components/ServiceFeature";
-import Image from "next/image";
 
 export default function About() {
   return (

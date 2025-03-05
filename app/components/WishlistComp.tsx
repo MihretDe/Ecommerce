@@ -8,6 +8,7 @@ interface WishlistItem {
   prev_price?: number;
   ratings?: number;
 }
+import Image from "next/image";
 const WishlistComp: React.FC<{ items: WishlistItem }> = ({ items }) => {
   return (
     <div className="mb-4">
@@ -66,7 +67,13 @@ const WishlistComp: React.FC<{ items: WishlistItem }> = ({ items }) => {
           </div>
         </div>
         <div className="flex items-start justify-between space-x-4 ">
-          <img src={items.image} className="max-w-56 h-44 object-cover" />
+          <Image
+            src={items.image}
+            alt="Item Image"
+            width={224} // 56 * 4 = 224px
+            height={176} // 44 * 4 = 176px
+            className="object-cover"
+          />
         </div>
         <div className="border border-solid bg-black text-white flex justify-center gap-2 w-full h-10 items-center">
           <svg
