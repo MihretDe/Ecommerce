@@ -5,7 +5,7 @@ import ServiceFeature from "@/app/components/ServiceFeature";
 export default function About() {
   return (
     <>
-      <div className="border border-solid bg-black w-full h-12 flex justify-around pl-22 ">
+      <div className="border border-solid bg-black w-full h-12 flex justify-around md:pl-22 ">
         <p className="text-sm text-white">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
           <span className="font-semibold">ShopNow</span>
@@ -15,11 +15,11 @@ export default function About() {
       <div className="">
         <Navbar isLoggedIn={true}></Navbar>
         <hr className="my-6"></hr>
-        <div className="mx-32">
+        <div className="md:mx-32">
           <div className=" py-12">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center justify-between">
               {/* Our Story Section */}
-              <div className="text-center mb-12 w-[50%]">
+              <div className="text-center mb-12 md:w-[50%]">
                 <h2 className="text-3xl font-bold">Our Story</h2>
                 <p className="text-gray-600 mt-4 text-left">
                   Launched in 2018, Exclusive is South Asia’s premier online
@@ -35,7 +35,7 @@ export default function About() {
                 </p>
               </div>
               {/* Image Section */}
-              <div className="mb-12 w-[50%]">
+              <div className="mb-12 md:w-[50%]">
                 <img
                   src="assets/Side Image.png"
                   alt="Shopping"

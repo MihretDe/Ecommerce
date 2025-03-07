@@ -9,8 +9,8 @@ import ServiceFeature from "@/app/components/ServiceFeature";
 import Footer from "@/app/components/Footer";
 export default function Home() {
   return (
-    <div>
-      <div className="border border-solid bg-black w-full h-12 flex justify-around pl-22 ">
+    <div className="w-full">
+      <div className="border border-solid bg-black  h-12 flex justify-around pl-22 ">
         <p className="text-sm text-white">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
           <span className="font-semibold">ShopNow</span>

@@ -23,7 +23,7 @@ const SignPage = () => {
       <div>
         <Navbar isLoggedIn={false}></Navbar>
         <hr className="my-6"></hr>
-        <div className="flex  mx-0 gap-40 mb-16">
+        <div className="flex flex-col md:flex-row  mx-0 gap-40 mb-16">
           <img src="assets/signUp.png" className="mx-0 h-[781px]"></img>
             <form className="flex flex-col justify-center " onSubmit={handleSubmit}>
             <p className="text-4xl font-medium mb-4">Create an account</p>

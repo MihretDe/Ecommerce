@@ -5,7 +5,7 @@ import CheckoutForm from "../../components/CheckoutForm";
 const page = () => {
   return (
     <div>
-      <div className="border border-solid bg-black w-full h-12 flex justify-around pl-22 ">
+      <div className="border border-solid bg-black w-full h-12 flex justify-around md:pl-22 ">
         <p className="text-sm text-white">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
           <span className="font-semibold">ShopNow</span>
@@ -13,7 +13,7 @@ const page = () => {
         <p className="text-sm text-white">English </p>
       </div>
       <Navbar isLoggedIn={true} />
-      <div className="mx-32">
+      <div className="mx-7 md:mx-24">
         <CheckoutForm/>
       </div>
       <Footer />

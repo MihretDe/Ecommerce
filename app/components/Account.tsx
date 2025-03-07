@@ -2,7 +2,7 @@ import React from "react";
 
 const Account = () => {
   return (
-    <div className="flex gap-24 my-12 ">
+    <div className="flex gap-24 my-12 md:mx-24">
       <div>
         <div className="mb-4">
           <p className="text-base font-medium mb-2">Manage My Account</p>

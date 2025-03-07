@@ -1,8 +1,8 @@
-import React from 'react'
-import ItemsCard from './ItemsCard'
+import React from "react";
+import ItemsCard from "./ItemsCard";
 const OurProducts = () => {
   return (
-    <div className='mx-24'>
+    <div className="ml-4 md:ml-24">
       <div className="flex items-center">
         <div className="border border-solid w-5 h-10 bg-red-600 rounded-sm"></div>
         <p className="font-semibold text-base text-red-600">Our Products</p>
@@ -46,93 +46,25 @@ const OurProducts = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-4'>
-      <ItemsCard
-          items={{
-            
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {Array(8)
+          .fill({
             title: "HAVIT HV-G92 Gamepad",
             curr_price: 120,
             prev_price: 160,
             ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
-        <ItemsCard
-          items={{
-            
-            title: "HAVIT HV-G92 Gamepad",
-            curr_price: 120,
-            prev_price: 160,
-            ratings: 4,
-            image: "assets/playstation.jpg",
-          }}
-        />
+            image: "/assets/playstation.jpg",
+          })
+          .map((item, index) => (
+            <ItemsCard key={index} items={item} />
+          ))}
       </div>
+
       <p className="border border-solid bg-red-500 w-60 h-14 rounded-md flex items-center justify-center text-white text-base cursor-pointer hover:bg-red-600 font-medium my-9">
         View all products
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default OurProducts
+export default OurProducts;
